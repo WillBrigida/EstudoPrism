@@ -1,4 +1,5 @@
 ﻿using EstudoPrism.ViewModels;
+using EstudoPrism.Views;
 using Prism;
 using Prism.DryIoc;
 using Prism.Ioc;
@@ -41,11 +42,8 @@ namespace EstudoPrism
             containerRegistry.RegisterForNavigation<NavigationPage>();
 
             containerRegistry.RegisterForNavigation<MainPage, MainViewModel>();
-            //containerRegistry.RegisterForNavigation<DetalhesPage, DetalhesViewModel>();
-            //containerRegistry.RegisterForNavigation<CardsPage, CardsViewModel>();
-            //containerRegistry.RegisterForNavigation<MenuPage, MenuViewModel>();
-
-            //containerRegistry.RegisterSingleton<IMarvelApiService, MarvelApiService>();
+            containerRegistry.RegisterForNavigation<SegundaPage, SegundaViewModel>();
+            containerRegistry.RegisterForNavigation<TerceiraPage, TerceiraViewModel>();
         }
     }
 }
